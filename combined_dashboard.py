@@ -11,7 +11,11 @@ from marketing_strategies import allocate_sales_teams, optimize_marketing, apply
 
 st.set_page_config(layout="wide")
 
-
+def optimize_marketing(data):
+    """
+    Allocates marketing budget based on Customer Lifetime Value (CLV).
+    """
+    return np.where(data["CLV"] > 400, 5000, np.where(data["CLV"] > 200, 3000, 1000))
 
 def run(global_store):
     st.title("Advanced Business Analytics Dashboard")
