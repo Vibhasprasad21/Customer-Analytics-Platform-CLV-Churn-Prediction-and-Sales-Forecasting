@@ -20,7 +20,7 @@ app_mode = st.sidebar.radio("Select Dashboard", [
 ])
 
 if app_mode == "Main App":
-    st.title("AI-Driven Customer Lifetime Value, Churn Prediction, and Sales Prediction")
+    st.title("AI-Driven Customer Lifetime Value, Churn Prediction, and Sales Forecasting")
     st.write("""
     This application processes your uploaded dataset to calculate Customer Lifetime Value (CLV), 
     predict customer churn, and forecast sales.
